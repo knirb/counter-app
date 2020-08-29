@@ -14,12 +14,10 @@ class App extends React.Component {
     ]
   };
 
-
-
   handleIncrement = (counter) => {
     const counters = [...this.state.counters] //clones counters
     const index = counters.indexOf(counter)
-    //counters[index]={...counter}
+    counters[index]={...counter} //this line is to prevent the following line to directly modify the state 
     counters[index].value++;
     this.setState({counters})
   };

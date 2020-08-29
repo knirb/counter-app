@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Counter from './counter'
-
 class Counters extends React.Component {
   render () {
 
